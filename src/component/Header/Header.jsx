@@ -15,9 +15,7 @@ function Header({nav}){
                         {nav.map((el,ind) => <Nav key={ind} text={el}/>)}
                     </ul>
                 </div>
-                <div className={style.but}>
                     <MenuButton />
-                </div>
             </div>
         </header>
     )

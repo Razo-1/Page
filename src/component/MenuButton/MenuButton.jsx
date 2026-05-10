@@ -1,6 +1,10 @@
+import style from './MenuButton.module.css'
+
 function MenuButton(){
     return(
-        <button>Սկսե՛լ ուսումը</button>
+        <div className={style.but}>
+            <button>Սկսե՛լ ուսումը</button>
+        </div>
     )
 }
 

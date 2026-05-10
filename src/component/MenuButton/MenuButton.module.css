@@ -1,0 +1,14 @@
+.but button{
+    padding:12px 20px;
+    font-size:13px;
+    border:1px solid #f3b01b;
+    background-color:#f3b01b;
+    color:white;
+    transition:0.5s ease;
+    border-radius:20px;
+    cursor: pointer;
+}
+.but button:hover{
+    background-color:transparent;
+    color:black;
+}
