@@ -1,0 +1,14 @@
+@font-face {
+    font-family:dejavu;
+    src: url('./assets/dejavu.ttf');
+}
+*{
+    font-family:dejavu;
+    letter-spacing:1px;
+    font-weight:600;
+    font-size:14px;
+}
+body{
+    padding:0;
+    margin:0;
+}
