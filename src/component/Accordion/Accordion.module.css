@@ -119,3 +119,11 @@
 .rotate{
     transform:rotateX(180deg);
 }
+.butone{
+    display: flex;
+    justify-content: center;
+}
+.butone button{
+    font-weight:500;
+
+}

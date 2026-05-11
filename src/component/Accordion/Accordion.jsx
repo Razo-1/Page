@@ -1,4 +1,5 @@
 import { DrawAccordion } from '../DrawAccordion/DrawAccordion.jsx';
+import { MenuButton } from '../MenuButton/MenuButton.jsx'
 import image from '../../assets/image/per2.png';
 import { useState } from 'react';
 
@@ -39,6 +40,9 @@ function Accordion({accordion}){
                         </div>
                         )})}
                 </div>
+            </div>
+            <div className={style.butone}>
+                <MenuButton />
             </div>
         </div>
     )
