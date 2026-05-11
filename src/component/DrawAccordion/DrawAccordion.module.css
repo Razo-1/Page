@@ -1,0 +1,25 @@
+.block{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.block i{
+    color:#f3b01b;
+    font-size:25px;
+     
+}
+.block span{
+    font-weight:600;
+    font-size:16px;
+    margin-left:10px;
+}
+.block h1{
+    font-weight:500;
+    font-size:16px;
+}
+.block p{
+    width:100%;
+}
+.text{
+    display:none;
+}
