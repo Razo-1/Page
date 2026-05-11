@@ -1,0 +1,16 @@
+.imagProfesson{
+    width:65px;
+}
+.imagProfesson img{
+    width:100%;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    width:100%;
+}
+.price span{
+    font-size:11px;
+    color: #404040;
+}
