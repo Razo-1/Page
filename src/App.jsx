@@ -1,11 +1,10 @@
-import {nav ,icon,profession,accordion} from './data/data.js';
 import {Header} from './component/Header/Header.jsx'
 import { Hero } from './component/Hero/hero.jsx'
 import { Proffesion } from './component/Proffesion/Proffesion.jsx';
 import { Accordion } from './component/Accordion/Accordion.jsx';
 import style from './App.module.css'
 
-function App(){
+function App({nav ,icon,profession,accordion}){
   return(
     <>
     <Header nav={nav} />
