@@ -345,6 +345,11 @@ let TrainersData = [
     },
 ]
 
+let bank = [
+    'https://smartcode.am/public/image/idram.png',
+    'https://smartcode.am/public/image/card.png'
+]
+
 let image = [
     'https://smartcode.am/public/image/gallery/gallery-1.jpg',
     'https://smartcode.am/public/image/gallery/gallery-2.jpg',
@@ -357,7 +362,7 @@ let image = [
 
 ]
 
-export { nav,icon,profession,accordion,TrainersData,image }
+export { nav,icon,profession,accordion,TrainersData,image,bank }
 
 
 

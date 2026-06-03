@@ -3,10 +3,11 @@ import { Hero } from './component/Hero/hero.jsx'
 import { Proffesion } from './component/Proffesion/Proffesion.jsx';
 import { Accordion } from './component/Accordion/Accordion.jsx';
 import { Students } from './component/Students/Students.jsx';
+import { Footer } from './component/Footer/Footer.jsx';
 import { Trainers } from './component/Trainers/Trainers.jsx';
 import style from './App.module.css'
 
-function App({nav ,icon,profession,accordion,TrainersData,image}){  
+function App({nav ,icon,profession,accordion,TrainersData,image,bank}){  
   return(
     <>
     <Header nav={nav} />
@@ -28,6 +29,11 @@ function App({nav ,icon,profession,accordion,TrainersData,image}){
     </div>
     <div className={style.screen}>
       <Students image={image}/>
+    </div>
+    <div className={style.grayScreen}>
+        <div className={style.screen}>
+          <Footer icon={icon} nav={nav} bank={bank}/>
+        </div>
     </div>
     </>
   )
