@@ -345,7 +345,19 @@ let TrainersData = [
     },
 ]
 
-export { nav,icon,profession,accordion,TrainersData }
+let image = [
+    'https://smartcode.am/public/image/gallery/gallery-1.jpg',
+    'https://smartcode.am/public/image/gallery/gallery-2.jpg',
+    'https://smartcode.am/public/image/gallery/gallery-3.jpg',
+    'https://smartcode.am/public/image/gallery/gallery-4.jpg',
+    'https://smartcode.am/public/image/gallery/gallery-5.jpg',
+    'https://smartcode.am/public/image/gallery/gallery-6.jpg',
+    'https://smartcode.am/public/image/gallery/gallery-7.jpg',
+    'https://smartcode.am/public/image/gallery/gallery-8.jpg'
+
+]
+
+export { nav,icon,profession,accordion,TrainersData,image }
 
 
 
