@@ -236,7 +236,116 @@ let accordion = [
         text : 'Դասընթացի ավարտին լավագույն արդյունք ցուցաբերած ուսանողներին կաջակցենք աշխատանքի ընդունման հարցում:'
     },
 ]
-export { nav,icon,profession,accordion }
+
+let TrainersData = [
+    {
+        image : 'https://smartcode.am/public/image/staff/15.png?v=1.3',
+        name : 'Հայկ',
+        profession : 'Front-End',
+        id : '58392014',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/3.png?v=1.3',
+        name : 'Անդրանիկ',
+        profession : 'AI Architecture',
+        id : '29485710',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/14.png?v=1.3',
+        name : 'Վարդգես',
+        profession : 'Python / Django',
+        id : '84739205',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/30.png',
+        name : 'Անժելա',
+        profession : 'UX / UI',
+        id : '10293857',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/12.png?v=1.3',
+        name : 'Ալբերտ',
+        profession : 'Python / ML',
+        id : '74635291',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/23.png?v=1.3',
+        name : 'Արման',
+        profession : 'JavaScript',
+        id : '48201937',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/6.png?v=1.3',
+        name : 'Ալբերտ',
+        profession : 'Python / ML',
+        id : '39572014',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/31.png',
+        name : 'Արմենուհի',
+        profession : 'UX / UI',
+        id : '60194827',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/17.png?v=1.3',
+        name : 'Նարեկ',
+        profession : 'Node.js',
+        id : '83726154',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/24.png?v=1.3',
+        name : 'Սերգեյ',
+        profession : 'Front-End',
+        id : '19483726',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/19.png?v=1.3',
+        name : 'Ռոման',
+        profession : 'React.js',
+        id : '50293841',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/41.png?v=1.3',
+        name : 'Անի',
+        profession : 'Interior / Graphic Design',
+        id : '38472910',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/40.png?v=1.3',
+        name : 'Գևորգ',
+        profession : 'C#',
+        id : '72615439',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/26.png?v=1.3',
+        name : 'Վահե',
+        profession : 'HTML / CSS',
+        id : '91029384',
+        trainer : "Trainer ",
+    },
+    {
+        image : 'https://smartcode.am/public/image/staff/42.png?v=1.3',
+        name : 'Աշոտ',
+        profession : 'C#',
+        id : '28471039',
+        trainer : "Trainer ",
+    },
+]
+
+export { nav,icon,profession,accordion,TrainersData }
 
 
 

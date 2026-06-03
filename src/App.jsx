@@ -2,9 +2,10 @@ import {Header} from './component/Header/Header.jsx'
 import { Hero } from './component/Hero/hero.jsx'
 import { Proffesion } from './component/Proffesion/Proffesion.jsx';
 import { Accordion } from './component/Accordion/Accordion.jsx';
+import { Trainers } from './component/Trainers/Trainers.jsx';
 import style from './App.module.css'
 
-function App({nav ,icon,profession,accordion}){
+function App({nav ,icon,profession,accordion,TrainersData}){  
   return(
     <>
     <Header nav={nav} />
@@ -18,6 +19,11 @@ function App({nav ,icon,profession,accordion}){
     </div>
     <div className={style.screen}>
       <Accordion accordion={accordion} />
+    </div>
+    <div className={style.grayScreen}>
+        <div className={style.screen}>
+          <Trainers TrainersData={TrainersData}/>
+        </div>
     </div>
     </>
   )
