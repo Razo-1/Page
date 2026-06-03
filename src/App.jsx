@@ -1,38 +1,45 @@
-import {Header} from './component/Header/Header.jsx'
-import { Hero } from './component/Hero/hero.jsx'
-import { Proffesion } from './component/Proffesion/Proffesion.jsx';
-import { Accordion } from './component/Accordion/Accordion.jsx';
-import { Students } from './component/Students/Students.jsx';
-import { Footer } from './component/Footer/Footer.jsx';
-import { Trainers } from './component/Trainers/Trainers.jsx';
+import { Header,Hero,Proffesion,Accordion,Students,Footer,Trainers } from './component'
+import { useEffect, useRef } from 'react'
 import style from './App.module.css'
 
-function App({nav ,icon,profession,accordion,TrainersData,image,bank}){  
+function App({nav ,icon,profession,accordion,TrainersData,image,bank,upOrDown}){  
+
+  let scrollRef = {
+    profession: useRef(null),
+    accordion: useRef(null),
+    trainers: useRef(null),
+    students: useRef(null),
+  }
+  
+  let scrol = (positon) => {
+    scrollRef[positon].current.scrollIntoView({ behavior : 'smooth'})
+   }
+   
   return(
     <>
-    <Header nav={nav} />
+    <Header nav={nav} scrol={scrol} upOrDown={upOrDown}/>
     <div className={style.screen}>
       <Hero icon={icon}/>
     </div>
     <div className={style.grayScreen}>
       <div className={style.screen}>
-      <Proffesion profession={profession}/>
+      <Proffesion profession={profession} scrollRef={scrollRef.profession}/>
       </div>
     </div>
     <div className={style.screen}>
-      <Accordion accordion={accordion} />
+      <Accordion accordion={accordion} scrollRef={scrollRef.accordion} />
     </div>
     <div className={style.grayScreen}>
         <div className={style.screen}>
-          <Trainers TrainersData={TrainersData}/>
+          <Trainers TrainersData={TrainersData} scrollRef={scrollRef.trainers}/>
         </div>
     </div>
     <div className={style.screen}>
-      <Students image={image}/>
+      <Students image={image} scrollRef={scrollRef.students}/>
     </div>
     <div className={style.grayScreen}>
         <div className={style.screen}>
-          <Footer icon={icon} nav={nav} bank={bank}/>
+          <Footer icon={icon} nav={nav} bank={bank} scrol={scrol} upOrDown={upOrDown}/>
         </div>
     </div>
     </>

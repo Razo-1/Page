@@ -2,7 +2,7 @@ import { Logo } from '../Logo/Logo.jsx'
 import { Nav } from '../nav/Nav.jsx'
 import style from './Footer.module.css'
 
-function Footer({icon,nav,bank}){
+function Footer({icon,nav,bank,scrol,upOrDown}){
     return(
         <footer>
             <div className={style.logoPart}>
@@ -16,7 +16,7 @@ function Footer({icon,nav,bank}){
                 <p className={style.title}>Ընկերություն</p>
                 <div className={style.nav}>
                     <ul>
-                        {nav.map((el,ind) => <Nav key={ind} text={el}/>)}
+                        {nav.map((el,ind) => <Nav key={ind} text={el} scrol={scrol} upOrDown={upOrDown[ind]}/>)}
                         <li>Աշխատանք</li>
                     </ul>
                     <div className={style.bank}>
@@ -28,11 +28,11 @@ function Footer({icon,nav,bank}){
                 <p className={style.title}>Կապ մեզ հետ</p>
                 <div className={style.nav}>
                     <ul>
-                        <li><i class="fa-solid fa-phone"></i> +374 41 435344</li>
-                        <li><i class="fa-solid fa-phone"></i> +374 98 435341</li>
-                        <li><i class="fa-solid fa-envelope"></i> support@smartcode.am</li>
-                        <li><i class="fa-solid fa-envelope"></i> hr@smartcode.am</li>
-                        <li><i class="fa-solid fa-location-pin"></i> Հակոբ Հակոբյան 3/17</li>
+                        <li><i className="fa-solid fa-phone"></i> +374 41 435344</li>
+                        <li><i className="fa-solid fa-phone"></i> +374 98 435341</li>
+                        <li><i className="fa-solid fa-envelope"></i> support@smartcode.am</li>
+                        <li><i className="fa-solid fa-envelope"></i> hr@smartcode.am</li>
+                        <li><i className="fa-solid fa-location-pin"></i> Հակոբ Հակոբյան 3/17</li>
                     </ul>
                 </div>
             </div>

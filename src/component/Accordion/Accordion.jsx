@@ -5,15 +5,15 @@ import { useState } from 'react';
 
 import style from './Accordion.module.css';
 
-function Accordion({accordion}){
-
+function Accordion({accordion,scrollRef}){
+    
     let [active,setActive] = useState(null)
     let check = (arg) =>{
         setActive(active === arg ? null : arg)
     }
     
     return(
-        <div className={style.midleBlock}>
+        <div ref={scrollRef} className={style.midleBlock}>
             <div className={style.title}>
                 <h1>Ինչո՞ւ սովորել <span>մեզ մոտ</span></h1>
                 <p>Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է</p>

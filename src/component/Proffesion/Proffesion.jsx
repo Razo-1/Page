@@ -3,7 +3,7 @@ import style from './Proffesion.module.css';
 import image from '../../assets/image/per4.png'
 import { useState } from 'react';
 
-function Proffesion({profession}){
+function Proffesion({profession,scrollRef}){
     let [active,setActive] = useState(1)
     let [chang,setChang] = useState()
 
@@ -36,7 +36,7 @@ function Proffesion({profession}){
     }
 
     return(
-        <div className={style.content}>
+        <div ref={scrollRef} className={style.content}>
             <div className={style.profes}>
                 <div className={style.getAcquainted}>
                     <h1>Ծրագրավորման <span>դասընթացներ</span></h1>

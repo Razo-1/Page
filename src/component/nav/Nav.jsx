@@ -1,6 +1,6 @@
-function Nav({text}){
+function Nav({text,scrol,upOrDown}){
     return(
-        <li>{text}</li>
+        <li onClick={() => scrol(upOrDown)}>{text}</li>
     )
 }
 

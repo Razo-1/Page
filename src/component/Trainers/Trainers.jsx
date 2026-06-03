@@ -2,9 +2,9 @@ import { TrainerContent } from '../TrainerContent/TrainerContent'
 import { MenuButton } from '../MenuButton/MenuButton'
 import style from './Trainers.module.css'
 
-function Trainers({ TrainersData }){
+function Trainers({ TrainersData,scrollRef }){
     return(
-        <div className={style.trainer}>
+        <div ref={scrollRef} className={style.trainer}>
             <h1 className={style.title}>Դասընթաց<span>ավարներ</span></h1>
             <p className={style.text}>Մեր փորձառու մասնագետները կմատուցեն Ձեզ բարդ թվացող ինֆորմացիան բավականին պարզեցված տեսքով:</p>
 

@@ -2,9 +2,9 @@ import { Gallery } from '../Gallery/Gallery.jsx'
 import lastImage from '../../assets/image/per3.svg'
 import style from './Students.module.css'
 
-function Students({image}){
+function Students({image,scrollRef}){
     return(
-        <div>
+        <div ref={scrollRef}>
             <h1 className={style.title}>Մեր <span>շրջանավարտները</span></h1>
             <div className={style.phost}>
                 {image.map((el,ind) => <div key={ind} className={style.photo}><Gallery element={el}/><i className="fa-solid fa-magnifying-glass-plus"></i></div>)}

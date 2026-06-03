@@ -362,7 +362,9 @@ let image = [
 
 ]
 
-export { nav,icon,profession,accordion,TrainersData,image,bank }
+let upOrDown = ["profession",'accordion','trainers','students']
+
+export { nav,icon,profession,accordion,TrainersData,image,bank,upOrDown }
 
 
 
